@@ -19,10 +19,11 @@ Each agent starts its own MCP subprocess against the same local vault. There is 
 ## Set up
 
 1. Follow [the memory guide](docs/shared-memory.md) to install the runtime and create a real vault directory.
-2. Merge the appropriate MCP template into your client configuration:
-   - [Copilot CLI](clients/copilot/mcp-config.json): `~/.copilot/mcp-config.json`
-   - [Kiro](clients/kiro/mcp.json): `~/.kiro/settings/mcp.json`
-   - [OpenCode V2](clients/opencode/opencode.json): `~/.config/opencode/opencode.json` or `.jsonc`
+2. Connect each client:
+   - [Copilot CLI](clients/copilot/mcp-config.json) — merge into `~/.copilot/mcp-config.json`
+   - [Kiro](clients/kiro/mcp.json) — merge into `~/.kiro/settings/mcp.json`
+   - [OpenCode V2](clients/opencode/opencode.json) — merge into `~/.config/opencode/opencode.json` or `.jsonc`
+   - [Claude Code](clients/claude/SKILL.md) — place at `~/.claude/skills/shared-memory/SKILL.md` (uses ECC CLI, not MCP)
 3. Replace every `/ABSOLUTE/PATH/...` placeholder with a real absolute path. Configure the same `ECC_MEMORY_USER_ROOT` for all participating clients.
 4. Merge [the shared instruction snippet](clients/shared-instructions.md) into each agent's instructions or steering. Tools alone do not tell an agent when to recall or save.
 5. Follow [the skills guide](docs/shared-skills.md) to consolidate reusable procedures without overwriting existing copies.
