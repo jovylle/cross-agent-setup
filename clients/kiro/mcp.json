@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "shared-memory": {
+      "command": "/ABSOLUTE/PATH/TO/node",
+      "args": ["/ABSOLUTE/PATH/TO/ecc-universal/scripts/memory-mcp.mjs"],
+      "env": {
+        "ECC_MEMORY_HARNESS": "kiro",
+        "ECC_MEMORY_ALLOW_USER_SCOPE": "1",
+        "ECC_MEMORY_USER_ROOT": "/ABSOLUTE/PATH/TO/HOME/.shared-memory/memory"
+      }
+    }
+  }
+}

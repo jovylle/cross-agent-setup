@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "shared-memory": {
+        "type": "local",
+        "command": [
+          "/ABSOLUTE/PATH/TO/node",
+          "/ABSOLUTE/PATH/TO/ecc-universal/scripts/memory-mcp.mjs"
+        ],
+        "environment": {
+          "ECC_MEMORY_HARNESS": "opencode",
+          "ECC_MEMORY_ALLOW_USER_SCOPE": "1",
+          "ECC_MEMORY_USER_ROOT": "/ABSOLUTE/PATH/TO/HOME/.shared-memory/memory"
+        }
+      }
+    }
+  }
+}

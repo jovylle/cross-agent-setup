@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.env.*
+node_modules/
+.ecc/
+.shared-memory/
+.claude/
+.copilot/
+.kiro/
+.codex/
+.opencode/
+HANDOFF.md
